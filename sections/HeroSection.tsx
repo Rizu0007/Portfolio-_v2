@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef , useState } from "react";
 import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -9,6 +9,21 @@ import satNaing from "../public/satnaing-illustration.webp";
 import laptop from "../public/laptop-illustration.webp";
 
 const HeroSection: React.FC = () => {
+  const [resumeActive, setResumeActive] = useState(false)
+  const onButtonClick = () => {
+    // using Java Script method to get PDF file
+    fetch('SamplePDF.pdf').then(response => {
+        response.blob().then(blob => {
+            // Creating new object of PDF file
+            const fileURL = window.URL.createObjectURL(blob);
+            // Setting various property values
+            let alink = document.createElement('a');
+            alink.href = fileURL;
+            alink.download = 'resume.pdf';
+            alink.click();
+        })
+    })
+}
   const sectionRef = useRef(null);
   const q = gsap.utils.selector(sectionRef);
 
@@ -119,17 +134,17 @@ const HeroSection: React.FC = () => {
       </div>
 
       <div className="lg:basis-2/3 z-10 relative">
-        <span className="text-marrsgreen lg:text-lg font-medium dark:text-carrigreen">
+        <span className="text-w lg:text-lg font-medium dark:text-carrigreen">
           Hi my name is
         </span>
         <div className="overflow-hidden">
           <h1 className="text-animation text-4xl md:text-5xl lg:text-7xl md:my-2 font-semibold my-1">
-            Sat Naing
+            RIZWAN ALI
           </h1>
         </div>
         <div className="overflow-hidden">
-          <span className="text-animation text-2xl md:text-3xl lg:text-5xl block md:my-3 text-marrsgreen dark:text-carrigreen font-medium">
-            A Full-stack Developer
+          <span className="text-animation text-2xl md:text-3xl lg:text-5xl block md:my-3 text-marrsgreen dark:text-amber-700 font-medium">
+            A Blockchain  Developer
           </span>
         </div>
         <div className="mt-2 my-4 md:mb-8">
@@ -144,9 +159,12 @@ const HeroSection: React.FC = () => {
             every project I work on.
           </p>
         </div>
-        <LinkButton href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}>
-          Contact me!
-        </LinkButton>
+        
+        <div className="w-full h-auto mt-[1px]">
+ <button className="w-[190px] border-[2px] border-solid text-amber-500 font-bold border-green-200 px-5 py-3 bg-fuchsia-600 rounded-[30px] scale-[.90] hover:scale-[.95] transition-all hover:bg-marrsgreen" onClick={onButtonClick}>Download CV</button>
+ <button className="w-[150px] border-[2px] border-solid border-green-200 px-5 py-3 bg-dark-100 rounded-[30px] scale-[.90] hover:scale-[.95] transition-all hover:bg-marrsgreen"  href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}>Contact me!</button>
+ 
+                        </div>
       </div>
       <a
         href="#whoami"
