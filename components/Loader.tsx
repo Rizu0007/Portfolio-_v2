@@ -13,8 +13,8 @@ const Loader: React.FC<Props> = ({ children }) => {
 
     const tl = gsap.timeline({ defaults: { duration: 0.7 } });
     tl.fromTo(q(".loading-text"), { y: 120 }, { y: -10 });
-    tl.to(q(".white-bg"), { y: "-100%" }).to(
-      q(".dark-bg"),
+    tl.to(q(".dark-bg"), { y: "-100%" }).to(
+      q(".white-bg"),
       { y: "-100%", duration: 0.6 },
       "-=0.6"
     );

@@ -46,7 +46,6 @@ const Home: NextPage<Props> = ({ blogPosts }) => {
           <main id="main">
             <HeroSection />
             <AboutSection />
-            <Services/>
 
             <ProjectSection />
             <BlogSection posts={blogPosts} />
