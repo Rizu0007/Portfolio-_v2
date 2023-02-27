@@ -2,6 +2,8 @@ import { useEffect, useRef , useState } from "react";
 import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { faDownload, faQuoteLeft, faQuoteRight } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import LinkButton from "../components/LinkButton";
 
@@ -148,9 +150,9 @@ const HeroSection: React.FC = () => {
           </span>
         </div>
         <div className="mt-2 my-4 md:mb-8">
-          <p className="mb-1">
-            I am a Full-Stack Developer with a passion for delivering
-            exceptional results.
+          <p className="tracking-widest">
+          I'm a <span className='text-amber-600 font-bold underline space-x-4'>Front-End</span>  and  <span className='text-amber-600 font-bold underline'>  Blockchain Developer</span>   developer based in  pakistan. I describe myself as a passionate developer who loves
+                coding and always learning about new technologies.
           </p>
           <p>
             With my expertise in React and NextJS on the frontend, and PHP,
@@ -158,10 +160,21 @@ const HeroSection: React.FC = () => {
             combination of technical skills and creative problem-solving to
             every project I work on.
           </p>
+          <div className="w-full md:text-lg flex flex-col items-center" data-aos="fade-up">
+            <div className="flex space-x-2 flex-wrap">
+              <FontAwesomeIcon icon={faQuoteLeft} />
+              <p>Debugging becomes significantly easier</p>
+            </div>
+            <div className="flex space-x-2 flex-wrap">
+              <p>if you first admit that you are the problem.</p>
+              <FontAwesomeIcon icon={faQuoteRight} />
+            </div>
+          </div>
         </div>
         
         <div className="w-full h-auto mt-[1px]">
- <button className="w-[190px] border-[2px] border-solid text-amber-500 font-bold border-green-200 px-5 py-3 bg-fuchsia-600 rounded-[30px] scale-[.90] hover:scale-[.95] transition-all hover:bg-marrsgreen" onClick={onButtonClick}>Download CV</button>
+ <button className="w-[190px] border-[2px] border-solid text-amber-500 font-bold border-green-200 px-5 py-3     
+   bg-yellow-50 rounded-[30px] scale-[.90] hover:scale-[.95] hover:bg-marrsgreen transition ease-in-out duration-500" onClick={onButtonClick}>Download CV</button>
  <button className="w-[150px] border-[2px] border-solid border-green-200 px-5 py-3 bg-dark-100 rounded-[30px] scale-[.90] hover:scale-[.95] transition-all hover:bg-marrsgreen"  href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}>Contact me!</button>
  
                         </div>
