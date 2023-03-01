@@ -169,8 +169,8 @@ const AboutSection: React.FC = () => {
             </div>
 
             <p className="col-start-1 col-end-3 row-start-4 row-end-6 lg:row-start-1 lg:row-end-2 lg:col-start-3 lg:col-end-6 lg:ml-8 lg:mt-auto about-intro">
-              With 3 years of comprehensive experience in web application
-              development, I have honed my skills in both frontend and backend
+              With 1 years of comprehensive experience in web application
+              development, I have honed my skills in both frontend and blockchain
               development. In addition to my hands-on experience in web
               development, my education has also played a critical role in
               providing a strong foundation for my career.
@@ -197,18 +197,16 @@ const AboutSection: React.FC = () => {
 const educationInfo = [
   {
     id: 1,
-    title: "B.Sc (Hons) in Computing",
-    subTitle: "Edinburgh Napier University | 2018 ~ 2019",
+    title: "Bs Software engineering",
+    subTitle: "Comsats University islamabad | 2020 ~ 20123",
     list: [
       "Studied computer science, software development, DevOps",
-      "Graduated with First Class Honours",
-      "Got merit in 7 modules out of 9",
     ],
   },
   {
     id: 2,
-    title: "HND in Computing & System Development",
-    subTitle: "Info Myanmar University | 2016 - 2018",
+    title: "Intership as REACT.JS",
+    subTitle: "Syntax Software House",
     list: [
       "Studied modules specializing in software development",
       "Passed HND with overall Merit",
