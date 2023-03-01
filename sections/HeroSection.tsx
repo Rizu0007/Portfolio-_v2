@@ -4,6 +4,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { faDownload, faQuoteLeft, faQuoteRight } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { DarkModeSwitch } from "react-toggle-dark-mode"
 
 import LinkButton from "../components/LinkButton";
 
@@ -155,19 +156,17 @@ const HeroSection: React.FC = () => {
                 coding and always learning about new technologies.
           </p>
           <p>
-            With my expertise in React and NextJS on the frontend, and PHP,
-            CodeIgniter, NodeJS, and Express on the backend, I bring a unique
-            combination of technical skills and creative problem-solving to
-            every project I work on.
+            
           </p>
-          <div className="w-full md:text-lg flex flex-col items-center" data-aos="fade-up">
+          <div className="w-full md:text-lg flex flex-col items-center " data-aos="fade-up ">
             <div className="flex space-x-2 flex-wrap">
-              <FontAwesomeIcon icon={faQuoteLeft} />
+              <FontAwesomeIcon icon={faQuoteLeft}  className='w-[15px] my-px h-[-154px]'/>
               <p>Debugging becomes significantly easier</p>
             </div>
             <div className="flex space-x-2 flex-wrap">
-              <p>if you first admit that you are the problem.</p>
-              <FontAwesomeIcon icon={faQuoteRight} />
+              <br/>
+              <p className=''>if you first admit that you are the problem.</p>
+              <FontAwesomeIcon icon={faQuoteRight}  className='w-[15px] h-[-154px]'/>
             </div>
           </div>
         </div>
