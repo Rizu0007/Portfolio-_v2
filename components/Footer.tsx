@@ -20,7 +20,7 @@ const Footer: React.FC<Props> = ({ noPadding = false }) => {
         ))}
       </div>
       <div>
-        Coded with <span className="sr-only">love</span>
+        Coded on <span className="sr-only">love</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-5 w-5 mx-1 inline-block mb-1"
