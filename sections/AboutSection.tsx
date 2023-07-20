@@ -198,23 +198,25 @@ const educationInfo = [
   {
     id: 1,
     title: "Bs Software engineering",
-    subTitle: "Comsats University islamabad | 2020 ~ 20123",
+    subTitle: "Comsats University islamabad ",
     list: [
-      "Studied computer science, software development, DevOps",
+      "Software Engineering ",
+      " 2020 ~ 2024"
+
     ],
   },
   {
     id: 2,
-    title: "Intership as REACT.JS",
+    title: "Experience",
     subTitle: "Syntax Software House",
     list: [
-      "Studied modules specializing in software development",
-      "Passed HND with overall Merit",
+      "React.js",
+      "Firebase",
     ],
   },
   {
     id: 3,
-    title: "IELTS",
+    title: "Uv",
     subTitle: "British Council Myanmar | 2017",
     list: ["Got overall band score 6.5."],
   },

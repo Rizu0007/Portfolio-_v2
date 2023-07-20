@@ -56,8 +56,8 @@ const SocialLinks: React.FC<{ page?: string }> = ({ page }) => {
 const socialLinks = [
   {
     id: 1,
-    title: "Sat Naing's Github Profile",
-    link: "https://github.com/satnaing",
+    title: "Rizwan AliGithub Profile",
+    link: "https://github.com/Rizu0007",
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -75,8 +75,8 @@ const socialLinks = [
   },
   {
     id: 2,
-    title: "Sat Naing's LinkedIn Profile",
-    link: "https://www.linkedin.com/in/satnaing/",
+    title: "Rizwan Ali LinkedIn Profile",
+    link: "https://www.linkedin.com/in/rizwan-dev007/",
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +91,7 @@ const socialLinks = [
   },
   {
     id: 3,
-    title: "Check Sat Naing on Dev.to",
+    title: "Rizwan Ali on Dev.to",
     link: "https://dev.to/satnaing",
     svg: (
       <svg
@@ -106,8 +106,8 @@ const socialLinks = [
   },
   {
     id: 4,
-    title: "Sat Naing's Profile on Facebook",
-    link: "https://www.facebook.com/satnaing.dev",
+    title: "Rizwan Ali on Facebook",
+    link: "",
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
