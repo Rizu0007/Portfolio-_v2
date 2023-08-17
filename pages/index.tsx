@@ -48,7 +48,6 @@ const Home: NextPage<Props> = ({ blogPosts }) => {
             <AboutSection />
            <Services/>
             <ProjectSection />
-            <BlogSection posts={blogPosts} />
             <ContactSection />
           </main>
           <SocialLinks page="index" />
