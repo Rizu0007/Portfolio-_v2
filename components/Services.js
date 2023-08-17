@@ -77,6 +77,7 @@ const Myskills = () => {
         transition={{duration:0.3}}
         className="flex flex-col items-center bg-gray-800 rounded p-2 space-y-2 drop-shadow-xl">
             <div className="bg-gray-800 p-2 rounded-full">
+
             </div>
             <p className=	"section-heading ">Web 3 Skill
             </p>

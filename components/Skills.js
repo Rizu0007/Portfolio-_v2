@@ -7,6 +7,7 @@ import tailwind from '../assets/ex/tailwind.png'
 import nextjs from '../assets/ex/nextjs.png'
 import graphql from '../assets/ex/graphql.png'
 import github from '../assets/ex/github.png'
+import Image from "next/image";
 
 
 
@@ -83,7 +84,7 @@ const Experience = () => {
               key={id}
               className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
             >
-              <img src={src} alt="" className="w-20 mx-auto" />
+              <Image src={src} alt="" className="w-20 mx-auto" />
               <p className="mt-4">{title}</p>
             </div>
           ))}
