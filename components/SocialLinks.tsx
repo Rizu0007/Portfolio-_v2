@@ -92,7 +92,7 @@ const socialLinks = [
   {
     id: 3,
     title: "Rizwan Ali on Dev.to",
-    link: "rizu.vercel.app",
+    link: "https://rizu.vercel.app/",
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"

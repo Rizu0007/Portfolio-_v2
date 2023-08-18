@@ -216,9 +216,14 @@ const educationInfo = [
   },
   {
     id: 3,
-    title: "Uv",
-    subTitle: "British Council Myanmar | 2017",
-    list: ["Got overall band score 6.5."],
+    title: "INTERESTS",
+    subTitle: "",
+    list: [" Cricket",
+    "GAMING",
+    "Travelling"
+
+  ],
+    
   },
 ];
 
