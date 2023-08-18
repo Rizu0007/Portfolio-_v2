@@ -4,6 +4,7 @@ import { RoughNotation } from "react-rough-notation";
 import { useTheme } from "next-themes";
 import  coin from '.././public/projects/coin.png'
 import portfo from '.././public/projects/portfo.png'
+import comsats from '.././public/projects/comsats.png'
 
 import ProjectCard from "@/components/ProjectCard";
 import { useSection } from "context/section";
@@ -125,7 +126,7 @@ const projects = [
     type: "Frontend",
     image: (
       <Image
-        src={astroPaper}
+        src={comsats}
         sizes="100vw"
         fill
         alt="AstroPaper"
@@ -134,8 +135,8 @@ const projects = [
     ),
     desc: "A minimal, responsive and SEO-friendly blog theme for Astro. This theme is developed with Astro, TypeScript and React. This theme includes fuzzy-search, pagination etc.",
     tags: ["Astro", "TypeScript", "React", "TailwindCSS"],
-    liveUrl: "https://astro-paper.pages.dev/",
-    codeUrl: "https://github.com/satnaing/astro-paper",
+    liveUrl: "https://a",
+    codeUrl: "https://github.com/Rizu0007/comsats-hub.git",
     bgColor: "bg-[#9FD0E3]",
   },
 ];
