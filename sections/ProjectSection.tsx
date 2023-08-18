@@ -2,6 +2,8 @@ import Image from "next/image";
 import { useEffect, useRef } from "react";
 import { RoughNotation } from "react-rough-notation";
 import { useTheme } from "next-themes";
+import  coin from '.././public/projects/coin.png'
+import portfo from '.././public/projects/portfo.png'
 
 import ProjectCard from "@/components/ProjectCard";
 import { useSection } from "context/section";
@@ -53,7 +55,7 @@ const ProjectSection: React.FC = () => {
       <div className="others text-center mb-16">
         Other projects can be explored in{" "}
         <a
-          href="https://github.com/satnaing"
+          href="https://github.com/Rizu0007"
           className="font-medium underline link-outline text-marrsgreen dark:text-carrigreen whitespace-nowrap"
         >
           my github profile
@@ -65,21 +67,21 @@ const ProjectSection: React.FC = () => {
 
 const projects = [
   {
-    title: "Terminal Portfolio",
+    title: "Personal Portfolio",
     type: "Frontend",
     image: (
       <Image
-        src={terminalPortfolio}
+        src={portfo}
         sizes="100vw"
         fill
         alt="Terminal Portfolio"
         className="transition-transform duration-500 hover:scale-110 object-cover"
       />
     ),
-    desc: "My perfolio website in terminal version developed with React and TypeScript. In this project, styled-components library is used for styling and multiple themes supported.",
-    tags: ["React", "TypeScript", "Styled-Components"],
-    liveUrl: "https://terminal.satnaing.dev/",
-    codeUrl: "https://github.com/satnaing/terminal-portfolio",
+    desc: "My perfolio website in new version developed with React and TypeScript. In this project, Tailwindcss library is used for styling and multiple themes supported.",
+    tags: ["Next.js", "TypeScript", "Tailwindcsss"],
+    liveUrl: "https://rizu.vercel.app/",
+    codeUrl: "https://github.com/Rizu0007/Portfolio-_v2.git",
     bgColor: "bg-[#B4BEE0]",
   },
   {
@@ -97,25 +99,25 @@ const projects = [
     desc: "An ecommerce web application where users can browse various products, add to wishlist, add to cart, and make purchase. Available in English and Burmese languages.",
     tags: ["NextJS", "TypeScript", "TailwindCSS", "ContextAPI"],
     liveUrl: "https://haru-fashion.vercel.app/",
-    codeUrl: "https://github.com/satnaing/haru-fashion",
+    codeUrl: "https://github.com/satnaing/haru-fashio",
     bgColor: "bg-[#A6CECE]",
   },
   {
-    title: "Haru API",
+    title: "Comsats coin",
     type: "Backend",
     image: (
       <Image
-        src={haruApi}
+        src={coin}
         sizes="100vw"
         fill
         alt="Haru API"
         className="transition-transform duration-500 hover:scale-110 object-cover"
       />
     ),
-    desc: "A RESTful API developed for Haru fashion ecommerce project. Include CRUD operations, authentication, authorization, forgot/reset password and full-text search.",
-    tags: ["ExpressJS", "TypeScript", "PostgreSQL", "Prisma"],
-    liveUrl: "https://satnaing.github.io/haru-api/",
-    codeUrl: "https://github.com/satnaing/haru-api",
+    desc: "Erc20 token which use in university for different purpose. Create with solidity smart contract and ERC20 standard . Deploy with Hardhat",
+    tags: ["Solidity", "Next.js", "Hardhat", "Smart Contract"],
+    liveUrl: "https://comsats-erc-coin.vercel.app/",
+    codeUrl: "https://github.com/Rizu0007/comsat-coin.git",
     bgColor: "bg-[#C5E4E7]",
   },
   {
