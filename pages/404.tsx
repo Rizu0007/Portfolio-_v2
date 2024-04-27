@@ -33,7 +33,7 @@ const Home: NextPage = () => {
                 Go back Home
               </LinkButton>
               <Link
-                href="/blog"
+                href=""
                 className="link flex items-center px-4 lg:text-xl hover:underline"
               >
                 Go to Blog

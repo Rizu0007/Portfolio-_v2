@@ -14,14 +14,14 @@ const HeroSection: React.FC = () => {
   const [resumeActive, setResumeActive] = useState(false)
   const onButtonClick = () => {
     // using Java Script method to get PDF file
-    fetch('Rizwan.pdf').then(response => {
+    fetch('Mern.stack.pdf').then(response => {
         response.blob().then(blob => {
             // Creating new object of PDF file
             const fileURL = window.URL.createObjectURL(blob);
             // Setting various property values
             let alink = document.createElement('a');
             alink.href = fileURL;
-            alink.download = 'Rizwan.pdf';
+            alink.download = 'Mern.stack.pdf';
             alink.click();
         })
     })
@@ -146,12 +146,12 @@ const HeroSection: React.FC = () => {
         </div>
         <div className="overflow-hidden">
           <span className="text-animation text-2xl md:text-3xl lg:text-5xl block md:my-3 text-marrsgreen dark:text-amber-700 font-medium">
-            A Blockchain  Developer
+           Full Stack Developer
           </span>
         </div>
         <div className="mt-2 my-4 md:mb-8">
           <p className="tracking-widest">
-          I'm a <span className='text-amber-600 font-bold underline space-x-4'>Front-End</span>  and  <span className='text-amber-600 font-bold underline'>  Blockchain Developer</span>   developer based in  pakistan. I describe myself as a passionate developer who loves
+          I'm a <span className='text-amber-600 font-bold underline space-x-4'>Front-End</span>  and  <span className='text-amber-600 font-bold underline'>  Backend Developer</span>   developer based in  pakistan. I describe myself as a passionate developer who loves
                 coding and always learning about new technologies.
           </p>
           <p>

@@ -15,6 +15,9 @@ import terminalPortfolio from "public/projects/terminal-portfolio.webp";
 import haruFashion from "public/projects/haru-fashion.webp";
 import haruApi from "public/projects/haru-api.webp";
 import astroPaper from "public/projects/astro-paper.webp";
+import Fyp from 'public/2.png'
+import house from 'public/3.png'
+import blog from 'public/4.png'
 
 const ProjectSection: React.FC = () => {
   const { theme } = useTheme();
@@ -67,6 +70,43 @@ const ProjectSection: React.FC = () => {
 };
 
 const projects = [
+  
+  {
+    title: "Comsats Cryptocurrency Coin (FYP)",
+    type: "Blockchain+ mern stack",
+    image: (
+      <Image
+        src={Fyp}
+        sizes="100vw"
+        fill
+        alt="Fyp"
+        className="transition-transform duration-500 hover:scale-110 object-cover"
+      />
+    ),
+    desc: "Successfully deployed the token within the university, students and faculty engage with campus services by introducing a blockchain-based payment system. • Creation of a custom ERC20 token using Solidity,apply Advance authentication • Different shops are available in the Website where Student can purchase things with our Comsats Coin • Operations like deposite and withdrawal can be performed in the account",
+    tags: ["React.js", "Node", "Tailwind Css", "solidity"],
+    liveUrl: "https://fyp-2024-two.vercel.app/",
+    codeUrl: "https://github.com/Rizu0007/FYP2024.git",
+    bgColor: "bg-[#A6CECE]",
+  },
+  {
+    title: "Comsats coin",
+    type: "Backend",
+    image: (
+      <Image
+        src={house}
+        sizes="100vw"
+        fill
+        alt="Haru API"
+        className="transition-transform duration-500 hover:scale-110 object-cover"
+      />
+    ),
+    desc: "Led the development of a university accommodation finder using React.js and Tailwind CSS, to assist students in discovering nearby housing options and room shares • Engineered a seamless integration with Google Maps API to provide students with accurate location • Architected a secure user authentication system with Firebase, allowing users to create personalized accounts for posting and responding to rental and room-sharing ads",
+    tags: ["Solidity", "Next.js", "Hardhat", "Smart Contract"],
+    liveUrl: "https://realtor-v2.vercel.app/",
+    codeUrl: "https://github.com/Rizu0007/Comsats-House.git",
+    bgColor: "bg-[#C5E4E7]",
+  },
   {
     title: "Personal Portfolio",
     type: "Frontend",
@@ -86,57 +126,21 @@ const projects = [
     bgColor: "bg-[#B4BEE0]",
   },
   {
-    title: "Haru Fashion",
+    title: "ExolorX Blog Application",
     type: "Frontend",
     image: (
       <Image
-        src={haruFashion}
-        sizes="100vw"
-        fill
-        alt="Haru Fashion App"
-        className="transition-transform duration-500 hover:scale-110 object-cover"
-      />
-    ),
-    desc: "An ecommerce web application where users can browse various products, add to wishlist, add to cart, and make purchase. Available in English and Burmese languages.",
-    tags: ["NextJS", "TypeScript", "TailwindCSS", "ContextAPI"],
-    liveUrl: "https://haru-fashion.vercel.app/",
-    codeUrl: "https://github.com/satnaing/haru-fashio",
-    bgColor: "bg-[#A6CECE]",
-  },
-  {
-    title: "Comsats coin",
-    type: "Backend",
-    image: (
-      <Image
-        src={coin}
-        sizes="100vw"
-        fill
-        alt="Haru API"
-        className="transition-transform duration-500 hover:scale-110 object-cover"
-      />
-    ),
-    desc: "Erc20 token which use in university for different purpose. Create with solidity smart contract and ERC20 standard . Deploy with Hardhat",
-    tags: ["Solidity", "Next.js", "Hardhat", "Smart Contract"],
-    liveUrl: "https://comsats-erc-coin.vercel.app/",
-    codeUrl: "https://github.com/Rizu0007/comsat-coin.git",
-    bgColor: "bg-[#C5E4E7]",
-  },
-  {
-    title: "AstroPaper",
-    type: "Frontend",
-    image: (
-      <Image
-        src={comsats}
+        src={blog}
         sizes="100vw"
         fill
         alt="AstroPaper"
         className="transition-transform duration-500 hover:scale-110 object-cover"
       />
     ),
-    desc: "A minimal, responsive and SEO-friendly blog theme for Astro. This theme is developed with Astro, TypeScript and React. This theme includes fuzzy-search, pagination etc.",
-    tags: ["Astro", "TypeScript", "React", "TailwindCSS"],
-    liveUrl: "https://a",
-    codeUrl: "https://github.com/Rizu0007/comsats-hub.git",
+    desc: "Developed a feature-rich blog platform using Next.js and Prisma, categorizing content to highlight top and latest post from the user",
+    tags: ["next.js", "TypeScript", "Prisma", "TailwindCSS"],
+    liveUrl: "https://dailyblog-demo.vercel.app/",
+    codeUrl: "https://github.com/Rizu0007/exploreX.git",
     bgColor: "bg-[#9FD0E3]",
   },
 ];

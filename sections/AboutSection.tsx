@@ -211,7 +211,8 @@ const educationInfo = [
     subTitle: "Syntax Software House",
     list: [
       "React.js",
-      "Firebase",
+      "Next.js",
+      "January 2023 – May 2023"
     ],
   },
   {
