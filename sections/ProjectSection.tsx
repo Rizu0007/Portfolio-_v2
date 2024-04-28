@@ -119,7 +119,7 @@ const projects = [
         className="transition-transform duration-500 hover:scale-110 object-cover"
       />
     ),
-    desc: "My perfolio website in new version developed with React and TypeScript. In this project, Tailwindcss library is used for styling and multiple themes supported.",
+    desc: "My perfolio website in new version developed with React and TypeScript. In this project, Tailwindcss library is used for styling.",
     tags: ["Next.js", "TypeScript", "Tailwindcsss"],
     liveUrl: "https://rizu.vercel.app/",
     codeUrl: "https://github.com/Rizu0007/Portfolio-_v2.git",
